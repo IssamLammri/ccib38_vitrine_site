@@ -1,11 +1,40 @@
-<div align="center">
+# Centre Culturel Ibn Badis Grenoble (CCIB38)
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Bienvenue sur le dépôt du site officiel du **Centre Culturel Ibn Badis** basé à Grenoble.
 
-  <h1>Built with AI Studio</h2>
+## Présentation
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+Un espace dédié à la transmission du savoir, à l'épanouissement personnel et au vivre-ensemble.
+Le CCIB38 propose diverses activités, événements, conférences et services tels que le soutien scolaire et l'apprentissage des préceptes de l'Islam.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Technologies Utilisées
 
-</div>
+Ce projet est développé avec les technologies modernes suivantes :
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router
+
+## Scripts Disponibles
+
+Dans le répertoire du projet, vous pouvez exécuter :
+
+### `npm run dev`
+
+Lance l'application en mode développement.
+Ouvrez le port 3000 pour voir le résultat dans le navigateur.
+
+### `npm run build`
+
+Construit l'application pour la production dans le dossier `dist`.
+Optimise le build pour de meilleures performances.
+
+### `npm run lint`
+
+Vérifie les erreurs de code avec ESLint.
+
+## Hébergement
+
+L'hébergement des sites du domaine ccib38.fr est géré par la société OVH SAS.

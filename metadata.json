@@ -1,0 +1,6 @@
+{
+  "name": "CCIB38 - Centre Culturel Ibn Badis",
+  "description": "Site vitrine du Centre Culturel Ibn Badis de Grenoble (CCIB38). Présentation des activités, cours de religion, événements culturels et soutien scolaire.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
