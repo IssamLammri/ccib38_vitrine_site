@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function Activites() {
   const activitesPrincipales = [
     {
-      title: "Préceptes de l'Islam",
+      title: "Les cours d'arabe",
       icon: <BookOpen className="w-10 h-10 text-emerald-700" />,
       description: "Des cours structurés pour comprendre et approfondir les fondements, l'éthique et la spiritualité, adaptés à différents niveaux.",
       link: "/cours",
@@ -37,7 +37,7 @@ export default function Activites() {
     <div className="min-h-screen bg-[#F9FBF9]">
       <Helmet>
         <title>Activités & Services - CCIB38</title>
-        <meta name="description" content="Découvrez les principales activités du Centre Culturel Ibn Badis : préceptes de l'islam, événements & conférences, et soutien scolaire." />
+        <meta name="description" content="Découvrez les principales activités du Centre Culturel Ibn Badis : cours d'arabe, événements & conférences, et soutien scolaire." />
       </Helmet>
 
       {/* Hero Section */}

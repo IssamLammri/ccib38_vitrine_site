@@ -6,8 +6,8 @@ export default function CoursIslam() {
   return (
     <div className="overflow-hidden bg-[#F9FBF9] min-h-screen">
       <Helmet>
-        <title>Préceptes de l'Islam - CCIB38</title>
-        <meta name="description" content="Découvrez notre programme d'enseignement des préceptes de l'Islam et de la langue arabe. Un accompagnement bienveillant pour la réussite de vos enfants." />
+        <title>Les cours d'arabe - CCIB38</title>
+        <meta name="description" content="Découvrez notre programme d'enseignement des cours d'arabe. Un accompagnement bienveillant pour la réussite de vos enfants." />
       </Helmet>
 
       {/* Hero Section */}
@@ -18,7 +18,7 @@ export default function CoursIslam() {
                 Programme Éducatif
              </span>
              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light leading-tight mb-6">
-               Préceptes de <span className="font-bold text-emerald-100">l'Islam</span>
+               Les <span className="font-bold text-emerald-100">cours d'arabe</span>
              </h1>
              <p className="text-lg md:text-xl text-emerald-100/90 leading-relaxed font-sans max-w-2xl mx-auto">
                Un apprentissage complet pour comprendre sa religion, développer un bon comportement et s'épanouir dans la société.
@@ -40,7 +40,7 @@ export default function CoursIslam() {
                <h2 className="text-3xl font-serif font-bold text-slate-800 mb-6">Pourquoi ce programme ?</h2>
                <div className="prose prose-lg text-slate-600 font-sans">
                  <p>
-                   L'apprentissage des préceptes de l'Islam ne se limite pas à la transmission de connaissances. Il s'agit de forger la personnalité de l'enfant autour de valeurs nobles telles que le respect, la bienveillance et l'honnêteté.
+                   L'apprentissage de l'arabe ne se limite pas à la transmission de connaissances. Il s'agit de forger la personnalité de l'enfant autour de valeurs nobles telles que le respect, la bienveillance et l'honnêteté.
                  </p>
                  <p>
                    En combinant cet enseignement avec des <strong>cours de langue arabe</strong>, clés de la compréhension des textes, nous donnons à vos enfants les outils nécessaires pour comprendre leur foi avec intelligence et ouverture.
@@ -99,7 +99,7 @@ export default function CoursIslam() {
             <div className="bg-[#F9FBF9] p-6 rounded-2xl border border-emerald-100 flex flex-col items-center text-center md:col-span-2 lg:col-span-1">
               <BookOpen className="w-10 h-10 text-emerald-700 mb-4" />
               <h3 className="font-bold text-lg text-slate-800 mb-2">Contenu</h3>
-              <p className="text-slate-600 text-sm">Langue arabe, préceptes, comportement moral</p>
+              <p className="text-slate-600 text-sm">Langue arabe, religion, comportement moral</p>
             </div>
           </div>
 
@@ -138,8 +138,7 @@ export default function CoursIslam() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
-            
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-6">
             {/* Tarif 1 enfant */}
             <div className="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100 relative flex flex-col">
                <h3 className="text-xl font-bold text-slate-800 mb-1">1 Enfant</h3>
@@ -174,15 +173,33 @@ export default function CoursIslam() {
                </ul>
             </div>
 
-            {/* Tarif 3+ enfants */}
+            {/* Tarif 3 enfants */}
             <div className="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100 relative flex flex-col">
-               <h3 className="text-xl font-bold text-slate-800 mb-1">Famille Nombreuse</h3>
-               <p className="text-xs text-slate-500 mb-4">(3 enfants ou plus)</p>
-               <div className="my-2">
-                 <span className="text-4xl font-display font-bold text-emerald-700">200€</span>
-                 <span className="text-slate-500 font-medium text-sm"> / enfant / an</span>
+               <h3 className="text-xl font-bold text-slate-800 mb-1">3 Enfants</h3>
+               <div className="my-6">
+                 <span className="text-4xl font-display font-bold text-emerald-700">600€</span>
+                 <span className="text-slate-500 font-medium"> / an</span>
                </div>
-               <ul className="space-y-3 text-slate-600 flex-1 mb-8 mt-4">
+               <ul className="space-y-3 text-slate-600 flex-1 mb-8">
+                  <li className="flex items-center gap-2 text-sm">
+                    <span className="text-emerald-500 font-bold">✓</span> 32 semaines
+                  </li>
+                  <li className="flex items-center gap-2 text-sm font-semibold text-emerald-800 bg-emerald-50 p-2 rounded-lg mt-4">
+                    + 10€ d'inscription / enfant
+                  </li>
+               </ul>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-16">
+            {/* Tarif 4 enfants */}
+            <div className="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100 relative flex flex-col">
+               <h3 className="text-xl font-bold text-slate-800 mb-1">4 Enfants</h3>
+               <div className="my-6">
+                 <span className="text-4xl font-display font-bold text-emerald-700">740€</span>
+                 <span className="text-slate-500 font-medium"> / an</span>
+               </div>
+               <ul className="space-y-3 text-slate-600 flex-1 mb-8">
                   <li className="flex items-center gap-2 text-sm">
                     <span className="text-emerald-500 font-bold">✓</span> 32 semaines
                   </li>
@@ -192,6 +209,22 @@ export default function CoursIslam() {
                </ul>
             </div>
 
+            {/* Tarif 5 enfants et + */}
+            <div className="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100 relative flex flex-col">
+               <h3 className="text-xl font-bold text-slate-800 mb-1">5 Enfants et +</h3>
+               <div className="my-6">
+                 <span className="text-4xl font-display font-bold text-emerald-700">170€</span>
+                 <span className="text-slate-500 font-medium text-sm"> / enfant / an</span>
+               </div>
+               <ul className="space-y-3 text-slate-600 flex-1 mb-8">
+                  <li className="flex items-center gap-2 text-sm">
+                    <span className="text-emerald-500 font-bold">✓</span> 32 semaines
+                  </li>
+                  <li className="flex items-center gap-2 text-sm font-semibold text-emerald-800 bg-emerald-50 p-2 rounded-lg mt-4">
+                    + 10€ d'inscription / enfant
+                  </li>
+               </ul>
+            </div>
           </div>
 
           <div className="text-center">

@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Link, useLocation } from 'react-router-dom';
-import { ArrowRight, BookOpen, GraduationCap, Users, Heart, ThermometerSun } from 'lucide-react';
+import { ArrowRight, BookOpen, GraduationCap, Users, Heart } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { motion } from 'motion/react';
 import { useState, useEffect } from 'react';
@@ -36,38 +36,6 @@ export default function Home() {
         <meta name="description" content="Découvrez le Centre Culturel Ibn Badis de Grenoble (CCIB38). Activités, cours de religion, soutien scolaire et événements culturels pour tous." />
       </Helmet>
 
-      {/* Alert Canicule */}
-      <div className="bg-amber-100 border-b border-amber-200 py-6 px-4 shrink-0 shadow-inner">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="flex flex-col md:flex-row items-start md:items-center gap-5">
-            <div className="bg-amber-500 text-white p-4 rounded-full shadow-sm shrink-0">
-              <ThermometerSun className="w-8 h-8" />
-            </div>
-            <div>
-              <h3 className="text-amber-900 font-bold text-xl md:text-2xl mb-2 flex items-center gap-2">
-                OPÉRATION CANICULE
-              </h3>
-              <p className="text-amber-800 text-base md:text-lg mb-4">
-                Face aux fortes chaleurs, le Centre Culturel Ibn Badis met à disposition un espace climatisé pour les personnes vulnérables.
-              </p>
-              <ul className="flex flex-col sm:flex-row flex-wrap gap-x-6 gap-y-2 text-amber-900 font-medium">
-                <li className="flex items-center gap-2 bg-amber-50 px-3 py-1.5 rounded-md border border-amber-200/60">
-                  <span className="text-amber-600 text-lg">✅</span> Salle climatisée
-                </li>
-                <li className="flex items-center gap-2 bg-amber-50 px-3 py-1.5 rounded-md border border-amber-200/60">
-                  <span className="text-amber-600 text-lg">✅</span> Eau fraîche à disposition
-                </li>
-                <li className="flex items-center gap-2 bg-amber-50 px-3 py-1.5 rounded-md border border-amber-200/60">
-                  <span className="text-amber-600 text-lg">✅</span> Espace de repos et de confort
-                </li>
-                <li className="flex items-center gap-2 bg-amber-50 px-3 py-1.5 rounded-md border border-amber-200/60">
-                  <span className="text-amber-600 text-lg">✅</span> Accueil bienveillant
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* Hero Section */}
       <section className="relative pt-12 pb-24 md:pt-20 md:pb-32 bg-gradient-to-br from-emerald-900 to-emerald-800 shrink-0">
@@ -339,7 +307,7 @@ export default function Home() {
               <div className="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-700 mb-6 group-hover:scale-110 transition-transform">
                 <BookOpen className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-slate-800">Préceptes de l'Islam</h3>
+              <h3 className="text-xl font-bold mb-3 text-slate-800">Les cours d'arabe</h3>
               <p className="text-slate-500 text-sm leading-relaxed mb-4 flex-1">
                 Des cours structurés pour comprendre et approfondir les fondements, l'éthique et la spiritualité, adaptés à différents niveaux.
               </p>

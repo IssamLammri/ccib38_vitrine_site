@@ -51,7 +51,7 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-lg mb-6 text-slate-800">Services</h4>
             <ul className="space-y-3">
-              <li><Link to="/cours" className="text-slate-500 hover:text-emerald-700 transition-colors text-sm">Cours de préceptes (Islam)</Link></li>
+              <li><Link to="/cours" className="text-slate-500 hover:text-emerald-700 transition-colors text-sm">Les cours d'arabe</Link></li>
               <li><Link to="/soutien" className="text-slate-500 hover:text-emerald-700 transition-colors text-sm">Soutien scolaire</Link></li>
               <li><Link to="/conferences" className="text-slate-500 hover:text-emerald-700 transition-colors text-sm">Conférences</Link></li>
               <li><Link to="/evenements" className="text-slate-500 hover:text-emerald-700 transition-colors text-sm">Événements</Link></li>
