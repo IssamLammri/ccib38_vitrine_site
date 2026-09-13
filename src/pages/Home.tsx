@@ -245,6 +245,67 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Services Section */}
+      <section className="py-24 bg-[#F9FBF9]">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-5xl font-serif font-light text-slate-800 mb-6">Nos Activités Principales</h2>
+            <p className="text-lg text-slate-600">
+              Le CCIB38 propose une variété d'activités pour enrichir les connaissances et accompagner la réussite de la communauté.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            {/* Service 1 */}
+            <Link to="/cours" className="bg-white rounded-2xl p-6 shadow-sm hover:border-emerald-300 hover:shadow-md hover:-translate-y-1 transition-all duration-300 border border-emerald-100 group flex flex-col cursor-pointer">
+              <div className="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-700 mb-6 group-hover:scale-110 transition-transform">
+                <BookOpen className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-slate-800">Les cours d'arabe</h3>
+              <p className="text-slate-500 text-sm leading-relaxed mb-4 flex-1">
+                Des cours structurés pour comprendre et approfondir les fondements, l'éthique et la spiritualité, adaptés à différents niveaux.
+              </p>
+              <span className="text-[10px] font-semibold text-emerald-700 uppercase tracking-wider flex items-center gap-2 group/link">
+                Découvrir le programme
+                <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
+              </span>
+            </Link>
+
+            {/* Service 2 */}
+            <Link to="/evenements" className="bg-white rounded-2xl p-6 shadow-sm hover:border-emerald-300 hover:shadow-md hover:-translate-y-1 transition-all duration-300 border border-emerald-100 group flex flex-col cursor-pointer">
+              <div className="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-700 mb-6 group-hover:scale-110 transition-transform">
+                <Users className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-slate-800">Événements & Conférences</h3>
+              <p className="text-slate-500 text-sm leading-relaxed mb-4 flex-1">
+                Rencontres, expositions et débats culturels ouverts à toute la communauté pour favoriser le dialogue et le partage.
+              </p>
+              <span className="text-[10px] font-semibold text-emerald-700 uppercase tracking-wider flex items-center gap-2 group/link">
+                Voir l'agenda
+                <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
+              </span>
+            </Link>
+
+            {/* Service 3 */}
+            <Link to="/soutien" className="bg-white rounded-2xl p-6 shadow-sm hover:border-emerald-300 hover:shadow-md hover:-translate-y-1 transition-all duration-300 border border-emerald-100 group relative overflow-hidden flex flex-col cursor-pointer">
+              <div className="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-700 mb-6 group-hover:scale-110 transition-transform relative z-10">
+                <GraduationCap className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-slate-800 relative z-10">Soutien Scolaire</h3>
+              <p className="text-slate-500 text-sm leading-relaxed mb-4 flex-1 relative z-10">
+                Accompagnement personnalisé pour les élèves du primaire au lycée. Aide aux devoirs, méthodologie et préparation aux examens.
+              </p>
+              <span className="text-[10px] font-semibold text-emerald-700 uppercase tracking-wider flex items-center gap-2 group/link relative z-10">
+                S'inscrire
+                <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
+              </span>
+            </Link>
+
+          </div>
+        </div>
+      </section>
+
       {/* Team Section */}
       <section id="equipe" className="py-24 bg-white scroll-mt-20">
         <div className="container mx-auto px-4 md:px-6">
@@ -286,67 +347,6 @@ export default function Home() {
                  Le cœur de l'association : une belle alchimie entre l'expérience précieuse de nos anciens et la force de frappe ainsi que l'énergie des jeunes.
                </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section className="py-24 bg-[#F9FBF9]">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-5xl font-serif font-light text-slate-800 mb-6">Nos Activités Principales</h2>
-            <p className="text-lg text-slate-600">
-              Le CCIB38 propose une variété d'activités pour enrichir les connaissances et accompagner la réussite de la communauté.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            {/* Service 1 */}
-            <div className="bg-white rounded-2xl p-6 shadow-sm hover:border-emerald-300 transition-all duration-300 border border-emerald-100 group flex flex-col">
-              <div className="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-700 mb-6 group-hover:scale-110 transition-transform">
-                <BookOpen className="w-6 h-6" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-slate-800">Les cours d'arabe</h3>
-              <p className="text-slate-500 text-sm leading-relaxed mb-4 flex-1">
-                Des cours structurés pour comprendre et approfondir les fondements, l'éthique et la spiritualité, adaptés à différents niveaux.
-              </p>
-              <Link to="/cours" className="text-[10px] font-semibold text-emerald-700 uppercase tracking-wider flex items-center gap-2 group/link">
-                Découvrir le programme
-                <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
-              </Link>
-            </div>
-
-            {/* Service 2 */}
-            <div className="bg-white rounded-2xl p-6 shadow-sm hover:border-emerald-300 transition-all duration-300 border border-emerald-100 group flex flex-col">
-              <div className="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-700 mb-6 group-hover:scale-110 transition-transform">
-                <Users className="w-6 h-6" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-slate-800">Événements & Conférences</h3>
-              <p className="text-slate-500 text-sm leading-relaxed mb-4 flex-1">
-                Rencontres, expositions et débats culturels ouverts à toute la communauté pour favoriser le dialogue et le partage.
-              </p>
-              <Link to="/evenements" className="text-[10px] font-semibold text-emerald-700 uppercase tracking-wider flex items-center gap-2 group/link">
-                Voir l'agenda
-                <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
-              </Link>
-            </div>
-
-            {/* Service 3 */}
-            <div className="bg-white rounded-2xl p-6 shadow-sm hover:border-emerald-300 transition-all duration-300 border border-emerald-100 group relative overflow-hidden flex flex-col">
-              <div className="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-700 mb-6 group-hover:scale-110 transition-transform relative z-10">
-                <GraduationCap className="w-6 h-6" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-slate-800 relative z-10">Soutien Scolaire</h3>
-              <p className="text-slate-500 text-sm leading-relaxed mb-4 flex-1 relative z-10">
-                Accompagnement personnalisé pour les élèves du primaire au lycée. Aide aux devoirs, méthodologie et préparation aux examens.
-              </p>
-              <Link to="/soutien" className="text-[10px] font-semibold text-emerald-700 uppercase tracking-wider flex items-center gap-2 group/link relative z-10">
-                S'inscrire
-                <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
-              </Link>
-            </div>
-
           </div>
         </div>
       </section>

@@ -122,53 +122,35 @@ export default function SoutienScolaire() {
       {/* Tarifs */}
       <section className="py-16">
         <div className="container mx-auto px-4 md:px-6">
-           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl font-serif font-bold text-slate-800 mb-4">Des tarifs raisonnables</h2>
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl font-serif font-bold text-slate-800 mb-4">Un tarif unique et accessible</h2>
             <p className="text-slate-600 leading-relaxed">
-              Nous avons à cœur de proposer des tarifs accessibles. L'engagement s'effectue <strong>à l'année</strong>. Pour faciliter le règlement, nous offrons la possibilité d'<strong>échelonner le paiement par chèque</strong> (jusqu'à 10 fois maximum). 
-              Le tarif mensuel indiqué est lissé sur l'année, sans lien direct avec le nombre exact de semaines ou de séances par mois.
+              Le soutien scolaire est proposé au tarif unique de <strong>30 € par mois, par matière et par enfant</strong>.
+              L'engagement s'effectue <strong>à l'année</strong>. Pour faciliter le règlement, nous offrons la possibilité
+              d'<strong>échelonner le paiement par chèque</strong> (jusqu'à 10 fois maximum).
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            
-            {/* Tarif Standard */}
-            <div className="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100 relative flex flex-col">
-               <h3 className="text-xl font-bold text-slate-800 mb-1">Tarif Unique</h3>
-               <p className="text-xs text-slate-500 mb-4">Pour 1 enfant et 1 matière</p>
-               <div className="my-4">
-                 <span className="text-4xl font-display font-bold text-emerald-700">30€</span>
-                 <span className="text-slate-500 font-medium"> / mois</span>
-               </div>
-               <p className="text-slate-600 text-sm font-medium mt-auto border-t border-emerald-50 pt-4">
-                 Tarif fixe par mois calendaire pour 1 matière.
-               </p>
+          <div className="max-w-xl mx-auto">
+            <div className="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100 relative flex flex-col text-center">
+              <h3 className="text-xl font-bold text-slate-800 mb-1">Tarif unique</h3>
+              <p className="text-sm text-slate-500 mb-4">Pour chaque enfant et chaque matière</p>
+              <div className="my-4">
+                <span className="text-4xl font-display font-bold text-emerald-700">30€</span>
+                <span className="text-slate-500 font-medium"> / mois / matière / enfant</span>
+              </div>
+              <p className="text-slate-600 text-sm font-medium border-t border-emerald-50 pt-4">
+                Un tarif simple et unique, quelle que soit la matière choisie.
+              </p>
             </div>
-
-            {/* Tarif Réduit */}
-            <div className="bg-gradient-to-b from-emerald-700 to-emerald-800 rounded-3xl p-8 shadow-xl shadow-emerald-900/20 text-white relative flex flex-col">
-               <div className="absolute top-0 right-6 transform -translate-y-1/2 bg-yellow-400 text-yellow-950 font-bold px-4 py-1 rounded-full text-xs tracking-wider uppercase shadow-md">
-                 Tarif Réduit
-               </div>
-               <h3 className="text-xl font-bold text-emerald-50 mb-1">Pack Famille / Multi-matières</h3>
-               <p className="text-xs text-emerald-200 mb-4">À partir de 3 enfants inscrits <strong className="text-white">OU</strong> 2 matières ou plus pour 1 enfant</p>
-               <div className="my-4">
-                 <span className="text-4xl font-display font-bold text-white">25€</span>
-                 <span className="text-emerald-200 font-medium"> / mois / mat. / enf.</span>
-               </div>
-               <p className="text-emerald-100 text-sm font-medium mt-auto border-t border-emerald-600 pt-4">
-                 Réduction appliquée pour récompenser votre fidélité et alléger les charges familiales.
-               </p>
-            </div>
-
           </div>
 
           <div className="text-center mt-12">
-             <a href="/contact">
-               <Button size="lg" className="rounded-full shadow-lg shadow-emerald-700/20 bg-emerald-600 text-white hover:bg-emerald-500 transition-all text-base md:text-lg px-8 py-6 h-auto">
-                 Nous contacter pour s'inscrire
-               </Button>
-             </a>
+            <a href="https://portail.ccib38.fr/inscription-soutien-scolaire">
+              <Button size="lg" className="rounded-full shadow-lg shadow-emerald-700/20 bg-emerald-600 text-white hover:bg-emerald-500 transition-all text-base md:text-lg px-8 py-6 h-auto">
+                S'inscrire
+              </Button>
+            </a>
           </div>
         </div>
       </section>
