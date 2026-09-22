@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { Calendar, Gift, MapPin, PartyPopper, Smile, Trophey } from 'lucide-react';
+import { Calendar, Gift, MapPin, PartyPopper, Smile, Trophy } from 'lucide-react';
 
 export default function Evenements() {
   const events = [

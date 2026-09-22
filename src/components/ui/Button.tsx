@@ -1,6 +1,7 @@
+import type { ButtonHTMLAttributes } from "react";
 import { cn } from "../../lib/utils";
 
-export function Button({ className, variant, size, ...props }: React.ButtonHTMLAttributes<HTMLButtonElement> & { variant?: 'default' | 'outline' | 'ghost', size?: 'default' | 'sm' | 'lg' }) {
+export function Button({ className, variant, size, ...props }: ButtonHTMLAttributes<HTMLButtonElement> & { variant?: 'default' | 'outline' | 'ghost', size?: 'default' | 'sm' | 'lg' }) {
   return (
     <button
       className={cn(

@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { Mail, MapPin, Phone, Send, Clock } from 'lucide-react';
 import { Button } from '../components/ui/Button';
-import { useState } from 'react';
+import { useState, type ChangeEvent, type FormEvent } from 'react';
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -16,14 +16,14 @@ export default function Contact() {
     message: ''
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setIsSuccess(false);
