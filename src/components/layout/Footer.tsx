@@ -12,7 +12,7 @@ export default function Footer() {
             <Link to="/" className="flex items-center gap-2">
               <div className="flex flex-col items-start justify-center">
                 <div className="flex items-center gap-3 mb-2">
-                  <img src="/logoccib38.jpg" alt="Logo CCIB38" className="w-12 h-12 object-contain rounded-lg" />
+                  <img src="/ccib38_logo.jpg" alt="Logo CCIB38" className="w-12 h-12 object-contain rounded-lg" />
                   <div>
                     <span className="font-bold text-xl tracking-tight text-emerald-900 block">CCIB38</span>
                     <p className="text-[10px] uppercase tracking-widest text-emerald-600 font-semibold leading-tight">Centre Culturel<br/>Ibn Badis</p>

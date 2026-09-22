@@ -72,7 +72,7 @@ export default function Navbar() {
         <Link to="/" className="flex items-center gap-2">
           {/* Faking the logo as an SVG/text for now */}
               <div className="flex flex-col items-center justify-center gap-1 flex-row">
-                <img src="/logoccib38.jpg" alt="Logo CCIB38" className="w-10 h-10 object-contain rounded-lg" />
+                <img src="/ccib38_logo.jpg" alt="Logo CCIB38" className="w-10 h-10 object-contain rounded-lg" />
                 <div className="flex flex-col justify-center leading-tight">
                   <span className="font-bold text-xl tracking-tight text-emerald-900">CCIB38</span>
                   <p className="text-[10px] tracking-widest text-emerald-600 uppercase font-semibold">
