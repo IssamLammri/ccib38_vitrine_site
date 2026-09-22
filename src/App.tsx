@@ -13,6 +13,7 @@ import Evenements from './pages/Evenements';
 import Contact from './pages/Contact';
 import MentionsLegales from './pages/MentionsLegales';
 import PolitiqueConfidentialite from './pages/PolitiqueConfidentialite';
+import RejoignezNous from './pages/RejoignezNous';
 
 function NotFound() {
   return (
@@ -44,6 +45,8 @@ export default function App() {
             <Route path="/activites-secondaires" element={<ActivitesSecondaires />} />
             <Route path="/evenements" element={<Evenements />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/rejoignez-nous" element={<RejoignezNous />} />
+            <Route path="/offres" element={<RejoignezNous />} />
             <Route path="/mentions-legales" element={<MentionsLegales />} />
             <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
             <Route path="*" element={<NotFound />} />

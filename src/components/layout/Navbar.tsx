@@ -21,6 +21,7 @@ const searchIndex = [
   { id: 15, title: 'Contrôle parental et outils informatiques', path: '/conferences', type: 'Atelier', keywords: 'écrans, applications, enfants, technologie, ia' },
   { id: 16, title: "L'impact de l'IA sur notre quotidien", path: '/conferences', type: 'Conférence', keywords: 'technologie, intelligence artificielle, éthique' },
   { id: 17, title: "L'Astronomie et l'Univers", path: '/conferences', type: 'Conférence', keywords: 'stars, science, univers, étoiles, espace' },
+  { id: 18, title: 'Rejoignez-nous (Bénévolat & Offres)', path: '/rejoignez-nous', type: 'Recrutement', keywords: 'bénévole, bénévolat, emploi, recrutement, stage, professeur, animateur, offre, postuler' },
 ];
 
 export default function Navbar() {
@@ -35,6 +36,7 @@ export default function Navbar() {
     { name: 'Activités', path: '/activites' },
     { name: 'Événements', path: '/evenements' },
     { name: 'Conférences', path: '/conferences' },
+    { name: 'Rejoignez-nous', path: '/rejoignez-nous' },
   ];
 
   const searchResults = searchIndex.filter(item => {
@@ -72,7 +74,7 @@ export default function Navbar() {
         <Link to="/" className="flex items-center gap-2">
           {/* Faking the logo as an SVG/text for now */}
               <div className="flex flex-col items-center justify-center gap-1 flex-row">
-                <img src="/ccib38_logo.jpg" alt="Logo CCIB38" className="w-10 h-10 object-contain rounded-lg" />
+                <img src="/ccib38_logo.png" alt="Logo CCIB38" className="w-10 h-10 object-contain rounded-lg" />
                 <div className="flex flex-col justify-center leading-tight">
                   <span className="font-bold text-xl tracking-tight text-emerald-900">CCIB38</span>
                   <p className="text-[10px] tracking-widest text-emerald-600 uppercase font-semibold">

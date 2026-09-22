@@ -77,10 +77,12 @@ export default function Home() {
               <p className="text-lg md:text-xl text-emerald-100/80 mb-8 max-w-lg leading-relaxed">
                 Un espace dédié à la transmission du savoir, à l'épanouissement personnel et au vivre-ensemble. Rejoignez notre communauté !
               </p>
-              <Button size="lg" className="rounded-full shadow-lg shadow-emerald-900/50 bg-emerald-600 text-white border-0 hover:bg-emerald-500 hover:-translate-y-0.5 transition-all group">
-                Rejoins-nous 
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <Link to="/rejoignez-nous">
+                <Button size="lg" className="rounded-full shadow-lg shadow-emerald-900/50 bg-emerald-600 text-white border-0 hover:bg-emerald-500 hover:-translate-y-0.5 transition-all group">
+                  Rejoins-nous 
+                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
             </motion.div>
 
             <motion.div 
