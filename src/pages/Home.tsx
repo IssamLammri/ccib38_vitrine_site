@@ -33,7 +33,7 @@ export default function Home() {
     <div className="overflow-hidden">
       <Helmet>
         <title>CCIB38 - Centre Culturel Ibn Badis de Grenoble</title>
-        <meta name="description" content="Découvrez le Centre Culturel Ibn Badis de Grenoble (CCIB38). Activités, cours de religion, soutien scolaire et événements culturels pour tous." />
+        <meta name="description" content="Découvrez le Centre Culturel Ibn Badis de Grenoble (CCIB38). Activités, cours d'arabe et de religion, et événements culturels pour tous." />
       </Helmet>
 
 
@@ -257,12 +257,17 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             
             {/* Service 1 */}
-            <Link to="/cours" className="bg-white rounded-2xl p-6 shadow-sm hover:border-emerald-300 hover:shadow-md hover:-translate-y-1 transition-all duration-300 border border-emerald-100 group flex flex-col cursor-pointer">
-              <div className="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-700 mb-6 group-hover:scale-110 transition-transform">
-                <BookOpen className="w-6 h-6" />
+            <Link to="/cours" className="bg-white rounded-2xl p-6 shadow-sm hover:border-emerald-300 hover:shadow-md hover:-translate-y-1 transition-all duration-300 border border-emerald-100 group flex flex-col cursor-pointer relative">
+              <div className="flex items-start justify-between mb-6">
+                <div className="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-700 group-hover:scale-110 transition-transform">
+                  <BookOpen className="w-6 h-6" />
+                </div>
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200 shadow-xs">
+                  Pour tous les âges
+                </span>
               </div>
               <h3 className="text-xl font-bold mb-3 text-slate-800">Les cours d'arabe</h3>
               <p className="text-slate-500 text-sm leading-relaxed mb-4 flex-1">
@@ -275,9 +280,14 @@ export default function Home() {
             </Link>
 
             {/* Service 2 */}
-            <Link to="/evenements" className="bg-white rounded-2xl p-6 shadow-sm hover:border-emerald-300 hover:shadow-md hover:-translate-y-1 transition-all duration-300 border border-emerald-100 group flex flex-col cursor-pointer">
-              <div className="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-700 mb-6 group-hover:scale-110 transition-transform">
-                <Users className="w-6 h-6" />
+            <Link to="/evenements" className="bg-white rounded-2xl p-6 shadow-sm hover:border-emerald-300 hover:shadow-md hover:-translate-y-1 transition-all duration-300 border border-emerald-100 group flex flex-col cursor-pointer relative">
+              <div className="flex items-start justify-between mb-6">
+                <div className="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-700 group-hover:scale-110 transition-transform">
+                  <Users className="w-6 h-6" />
+                </div>
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200 shadow-xs">
+                  Adultes uniquement
+                </span>
               </div>
               <h3 className="text-xl font-bold mb-3 text-slate-800">Événements & Conférences</h3>
               <p className="text-slate-500 text-sm leading-relaxed mb-4 flex-1">
@@ -285,21 +295,6 @@ export default function Home() {
               </p>
               <span className="text-[10px] font-semibold text-emerald-700 uppercase tracking-wider flex items-center gap-2 group/link">
                 Voir l'agenda
-                <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
-              </span>
-            </Link>
-
-            {/* Service 3 */}
-            <Link to="/soutien" className="bg-white rounded-2xl p-6 shadow-sm hover:border-emerald-300 hover:shadow-md hover:-translate-y-1 transition-all duration-300 border border-emerald-100 group relative overflow-hidden flex flex-col cursor-pointer">
-              <div className="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-700 mb-6 group-hover:scale-110 transition-transform relative z-10">
-                <GraduationCap className="w-6 h-6" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-slate-800 relative z-10">Soutien Scolaire</h3>
-              <p className="text-slate-500 text-sm leading-relaxed mb-4 flex-1 relative z-10">
-                Accompagnement personnalisé pour les élèves du primaire au lycée. Aide aux devoirs, méthodologie et préparation aux examens.
-              </p>
-              <span className="text-[10px] font-semibold text-emerald-700 uppercase tracking-wider flex items-center gap-2 group/link relative z-10">
-                S'inscrire
                 <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
               </span>
             </Link>

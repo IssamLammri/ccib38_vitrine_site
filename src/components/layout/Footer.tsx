@@ -21,7 +21,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-gray-500 text-sm leading-relaxed max-w-xs">
-              Espace de vie, d'apprentissage et de partage à Grenoble. Cours, événements et soutien scolaire pour tous.
+              Espace de vie, d'apprentissage et de partage à Grenoble. Cours, activités culturelles et événements pour tous.
             </p>
             <div className="flex items-center gap-4 pt-2">
               <a href="#" className="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-slate-500 hover:text-emerald-700 hover:bg-emerald-50 transition-all">
@@ -53,7 +53,6 @@ export default function Footer() {
             <h4 className="font-bold text-lg mb-6 text-slate-800">Services</h4>
             <ul className="space-y-3">
               <li><Link to="/cours" className="text-slate-500 hover:text-emerald-700 transition-colors text-sm">Les cours d'arabe</Link></li>
-              <li><Link to="/soutien" className="text-slate-500 hover:text-emerald-700 transition-colors text-sm">Soutien scolaire</Link></li>
               <li><Link to="/conferences" className="text-slate-500 hover:text-emerald-700 transition-colors text-sm">Conférences</Link></li>
               <li><Link to="/evenements" className="text-slate-500 hover:text-emerald-700 transition-colors text-sm">Événements</Link></li>
             </ul>
@@ -81,7 +80,7 @@ export default function Footer() {
                   <p className="font-semibold text-slate-700 mb-1">Horaires d'ouverture</p>
                   Mercredi : 14h - 18h<br/>
                   Samedi / Dimanche : 9h - 12h15 | 14h - 17h15<br/>
-                  <span className="text-[10px] italic">Semaine : selon soutien scolaire</span>
+                  <span className="text-[10px] italic">Semaine : selon calendrier des cours et activités</span>
                 </div>
               </li>
             </ul>

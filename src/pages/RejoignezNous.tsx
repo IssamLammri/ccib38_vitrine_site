@@ -3,7 +3,6 @@ import { useState, type FormEvent } from 'react';
 import { 
   Heart, 
   Sparkles, 
-  GraduationCap, 
   Briefcase, 
   Clock, 
   MapPin, 
@@ -44,30 +43,12 @@ const OFFERS: JobOffer[] = [
     location: 'CCIB38 - 18 Rue des Trembles, Grenoble',
     description: "Donnez du sens à votre temps libre ! Que vous ayez 2 heures par semaine ou quelques jours par mois, rejoignez une équipe chaleureuse et dynamique pour soutenir nos actions éducatives, culturelles et solidaires.",
     missions: [
-      "Animation d'ateliers ou aide aux devoirs selon vos compétences",
+      "Animation d'ateliers et projets éducatifs selon vos compétences",
       "Soutien logistique et accueil lors de nos conférences et événements",
       "Communication, création de supports visuels ou réseaux sociaux",
       "Projets d'entraide, bricolage ou secrétariat associatif"
     ],
     profile: "Toute personne enthousiaste, bienveillante et désireuse de partager ses compétences au service de la communauté."
-  },
-  {
-    id: 'prof-francais',
-    title: 'Professeur de Français - Soutien scolaire (Lycéens)',
-    type: 'Soutien Scolaire / Enseignement',
-    badge: 'Offre ouverte',
-    duration: 'Année scolaire 2026/2027',
-    isFeatured: false,
-    isExpired: false,
-    location: 'CCIB38 - 18 Rue des Trembles, Grenoble',
-    description: "Dans le cadre de notre pôle soutien scolaire, nous recherchons un(e) intervenant(e) qualifié(e) et passionné(e) en langue et littérature françaises pour accompagner des lycéens (de la Seconde à la Terminale).",
-    missions: [
-      "Animation de séances en petits groupes (méthodologie, analyse de texte, argumentation)",
-      "Préparation approfondie aux épreuves du Baccalauréat de français (écrit et oral)",
-      "Remise à niveau en syntaxe, orthographe et expression écrite",
-      "Suivi personnalisé et valorisation des progrès de chaque élève"
-    ],
-    profile: "Titulaire d'une licence ou master (Lettres Modernes, Sciences Humaines ou équivalent), étudiant(e) avancé(e) ou enseignant(e), avec un fort sens pédagogique et de la rigueur."
   },
   {
     id: 'stage-territoire',
@@ -175,7 +156,7 @@ export default function RejoignezNous() {
         <title>Rejoignez-nous & Offres - CCIB38</title>
         <meta 
           name="description" 
-          content="Découvrez nos opportunités d'engagement au Centre Culturel Ibn Badis de Grenoble. Devenez bénévole ou postulez à nos offres d'emploi et de soutien scolaire." 
+          content="Découvrez nos opportunités d'engagement au Centre Culturel Ibn Badis de Grenoble. Devenez bénévole ou rejoignez nos équipes associatives." 
         />
       </Helmet>
 
@@ -195,7 +176,7 @@ export default function RejoignezNous() {
               Rejoignez <span className="font-bold text-emerald-200">notre équipe</span>
             </h1>
             <p className="text-lg md:text-xl text-emerald-100/90 leading-relaxed max-w-2xl mx-auto">
-              Contribuez à une aventure humaine enrichissante. Que ce soit à travers le bénévolat ou nos missions d'enseignement, mettez vos compétences au service de notre communauté.
+              Contribuez à une aventure humaine enrichissante. À travers le bénévolat et l'engagement associatif, mettez vos compétences au service de notre communauté.
             </p>
           </div>
         </div>
@@ -350,11 +331,7 @@ export default function RejoignezNous() {
                         ? 'bg-slate-200 text-slate-500' 
                         : 'bg-emerald-50 text-emerald-700'
                     }`}>
-                      {offer.id === 'prof-francais' ? (
-                        <GraduationCap className="w-6 h-6" />
-                      ) : (
-                        <Briefcase className="w-6 h-6" />
-                      )}
+                      <Briefcase className="w-6 h-6" />
                     </div>
                     <div>
                       <h3 className={`text-xl sm:text-2xl font-bold ${

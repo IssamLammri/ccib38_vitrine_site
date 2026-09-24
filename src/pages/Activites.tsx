@@ -6,6 +6,7 @@ export default function Activites() {
   const activitesPrincipales = [
     {
       title: "Les cours d'arabe",
+      badge: "Pour tous les âges",
       icon: <BookOpen className="w-10 h-10 text-emerald-700" />,
       description: "Des cours structurés pour comprendre et approfondir les fondements, l'éthique et la spiritualité, adaptés à différents niveaux.",
       link: "/cours",
@@ -15,21 +16,13 @@ export default function Activites() {
     },
     {
       title: "Événements & Conférences",
+      badge: "Adultes uniquement",
       icon: <Calendar className="w-10 h-10 text-emerald-700" />,
       description: "Rencontres, expositions et débats culturels ouverts à toute la communauté pour favoriser le dialogue et le partage.",
       link: "/conferences",
       linkText: "Voir l'agenda",
       bgClass: "bg-teal-50",
       borderClass: "border-teal-100",
-    },
-    {
-      title: "Soutien Scolaire",
-      icon: <GraduationCap className="w-10 h-10 text-emerald-700" />,
-      description: "Accompagnement personnalisé pour les élèves du primaire au lycée. Aide aux devoirs, méthodologie et préparation aux examens.",
-      link: "/soutien",
-      linkText: "S'inscrire",
-      bgClass: "bg-cyan-50",
-      borderClass: "border-cyan-100",
     }
   ];
 
@@ -37,7 +30,7 @@ export default function Activites() {
     <div className="min-h-screen bg-[#F9FBF9]">
       <Helmet>
         <title>Activités & Services - CCIB38</title>
-        <meta name="description" content="Découvrez les principales activités du Centre Culturel Ibn Badis : cours d'arabe, événements & conférences, et soutien scolaire." />
+        <meta name="description" content="Découvrez les principales activités du Centre Culturel Ibn Badis : cours d'arabe et événements & conférences." />
       </Helmet>
 
       {/* Hero Section */}
@@ -65,9 +58,12 @@ export default function Activites() {
       {/* Activités Section */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {activitesPrincipales.map((act, index) => (
-              <div key={index} className="bg-white rounded-3xl p-8 shadow-[0_4px_24px_-8px_rgba(0,0,0,0.05)] border border-emerald-100/50 flex flex-col items-center text-center transition-all hover:shadow-lg hover:-translate-y-1 group">
+              <div key={index} className="bg-white rounded-3xl p-8 shadow-[0_4px_24px_-8px_rgba(0,0,0,0.05)] border border-emerald-100/50 flex flex-col items-center text-center transition-all hover:shadow-lg hover:-translate-y-1 group relative">
+                <span className="absolute top-6 right-6 inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200 shadow-xs">
+                  {act.badge}
+                </span>
                 <div className={`w-20 h-20 rounded-2xl ${act.bgClass} border ${act.borderClass} flex items-center justify-center shrink-0 mb-8`}>
                   {act.icon}
                 </div>

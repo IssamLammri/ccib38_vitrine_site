@@ -17,11 +17,10 @@ const searchIndex = [
   { id: 11, title: 'La spiritualité au quotidien', path: '/conferences/2', type: 'Conférence', keywords: 'foi, foi au quotidien, pratique' },
   { id: 12, title: 'Nous contacter', path: '/contact', type: 'Page', keywords: 'téléphone, adresse, email, message, formulaire, où nous trouver' },
   { id: 13, title: 'Les cours d\'arabe', path: '/cours', type: 'Service', keywords: 'école, apprentissage, religion, coran, langue arabe' },
-  { id: 14, title: 'Soutien scolaire', path: '/soutien', type: 'Service', keywords: 'école, aide aux devoirs, méthodologie, rattrapage, mathématiques, français' },
   { id: 15, title: 'Contrôle parental et outils informatiques', path: '/conferences', type: 'Atelier', keywords: 'écrans, applications, enfants, technologie, ia' },
   { id: 16, title: "L'impact de l'IA sur notre quotidien", path: '/conferences', type: 'Conférence', keywords: 'technologie, intelligence artificielle, éthique' },
   { id: 17, title: "L'Astronomie et l'Univers", path: '/conferences', type: 'Conférence', keywords: 'stars, science, univers, étoiles, espace' },
-  { id: 18, title: 'Rejoignez-nous (Bénévolat & Offres)', path: '/rejoignez-nous', type: 'Recrutement', keywords: 'bénévole, bénévolat, emploi, recrutement, stage, professeur, animateur, offre, postuler' },
+  { id: 18, title: 'Rejoignez-nous (Bénévolat & Offres)', path: '/rejoignez-nous', type: 'Recrutement', keywords: 'bénévole, bénévolat, emploi, recrutement, stage, animateur, offre, postuler, engagement' },
 ];
 
 export default function Navbar() {

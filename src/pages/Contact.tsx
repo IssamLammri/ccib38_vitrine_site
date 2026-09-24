@@ -233,7 +233,7 @@ export default function Contact() {
                     <p className="text-slate-600 mt-1 text-sm leading-relaxed">
                       Mercredi : 14h00 - 18h00<br/>
                       Samedi & Dimanche : 09h00 - 12h15 / 14h00 - 17h15<br/>
-                      <span className="text-slate-500 italic text-xs">Jours de semaine : selon programme de soutien scolaire</span>
+                      <span className="text-slate-500 italic text-xs">Jours de semaine : selon calendrier des cours et activités</span>
                     </p>
                   </div>
                 </li>
